@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>App Landy : Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Cabin for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for Logo   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="game/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game/main.js"></script>
+  </head>
+  <body>  
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+
+  
+  <!-- Start menu area -->
+  <div class="nav-area">      
+    <a id="menu-btn" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="main-nav" id="main-menu">
+      <span class="fa fa-remove" id="close"></span>
+      <ul>  
+        <li> <a href="#header"><i class="fa fa-home"></i><span>Home</span></a></li>
+        <li><a href="#features"><i class="fa fa-server"></i><span>Game</span></a></li>
+        <li><a href="#howit-works"><i class="fa fa-hourglass"></i><span>Music</span></a></li>
+        <li><a href="#pricing-table"><i class="fa fa-usd"></i><span>Data</span></a></li>
+        <li><a href="#subscribe"><i class="fa fa-envelope-o"></i><span>About me</span></a></li>          
+      </ul>      
+    </nav>
+  </div>  
+  <!-- End menu area -->
+
+  <!-- Start header section --> 
+  <header id="header">
+    <div class="header-inner">
+      <!-- Header image -->
+      <img src="assets/images/header-bg.jpg" alt="img">
+      <div class="overlay">
+        <div class="header-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header-top">
+                  <!-- Start logo area -->
+                  <div class="logo-area">
+                    <!-- Image based logo -->
+                    <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    <!-- Text based logo -->
+                    <!-- <a class="logo" href="index.html">App Landy.</a> -->
+                  </div>
+                  <!-- End logo area -->                 
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="header-bottom">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="header-bottom-left">
+                      <h1>Apply DFS on maze!</h1>
+                      <p>Depth-first search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.</p><br>
+                      <a class="download-btn" href="http://simonsays-tw.com/web/DFS-BFS/DepthFirstSearch.html">Link</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="header-bottom-right">
+                      <!-- <img src="assets/images/iphone-group1.png" alt="iphone grpup img"> -->
+                      <img src="assets/images/mazeDemo.gif" style="opacity: 0.5" alt="no file maze demo">
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </header>
+  <!-- End header section --> 
+
+  <!-- Start Features -->
+  <section id="features">
+        <canvas id = "buttonCanvas" width="200px" height="40px"></canvas>
+        <canvas id = "TopCanvas" width="1045px" height="140px"></canvas>
+        <canvas id = "myCanvas" width="1055px" height="705px"></canvas>
+        <canvas id = "Player1Canvas" width="200px" height="30px"></canvas>
+        <canvas id = "P1ScoreCanvas" width="200px" height="70px"></canvas>
+        <canvas id = "Player2Canvas" width="200px" height="30px"></canvas>
+        <canvas id = "P2ScoreCanvas" width="200px" height="70px"></canvas>
+        <canvas id = "TimeHeadCanvas" width="150px" height="30px"></canvas>
+        <canvas id = "TimeCanvas" width="150px" height="70px"></canvas>
+        <canvas id = "TipCanvas" width="500px" height="250px"></canvas>
+        <canvas id = "P1KeyCanvas" width="300px" height="200px"></canvas>
+        <canvas id = "P2KeyCanvas" width="300px" height="200px"></canvas>
+  </section>
+  <!-- End Features -->
+
+  <!-- Start how it works -->
+  <section id="howit-works">
+    <div class="howit-works-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-area wow fadeInLeft">
+              <h2 class="title">Music <span>Display</span></h2>
+            </div>
+          </div>  
+          <div class="col-md-12">
+            <div class="howit-works-video">
+              <iframe src="https://www.youtube.com/embed/f5jtO6ICn_s" width="428" height="276" frameborder="0"></iframe>                  
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End how it works -->
+
+  <!-- start pricing table -->
+  <section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area wow fadeInLeft">
+            <h2 class="title">Data <span>Review</span></h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="pricing-table-content">
+            <div class="row">
+              <!-- Start single plan -->
+              <div class="col-md-3 col-sm-6">                    
+                <div class="single-plan feature-price wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <div class="single-plan-head">
+                    <h5 id="p1_name">Player1</h5>
+                  </div>
+                  <div class="single-plan-content">
+                    <ul>
+                      <li id = "player1_die_num">死亡次數 : 0</li>
+                      <li id = "player1_kill_num">擊殺次數 : 0</li>
+                      <li id = "player1_kill_rate">擊殺率 : 0.0%</li>
+                      <li id = "player1_move_num">移動步數 : 0</li>
+                      <li id = "player1_score_num">格子數 : 0</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End single plan -->
+              <!-- Start single plan -->
+              <div class="col-md-3 col-sm-6">
+                <div class="single-plan wow fadeInUp" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                  <div class="single-plan-head">
+                    <h5 id="p2_name">Player2</h5>
+                  </div>
+                  <div class="single-plan-content">
+                    <ul>
+                      <li id = "player2_die_num">死亡次數 : 0</li>
+                      <li id = "player2_kill_num">擊殺次數 : 0</li>
+                      <li id = "player2_kill_rate">擊殺率 : 0.0%</li>
+                      <li id = "player2_move_num">移動步數 : 0</li>
+                      <li id = "player2_score_num">格子數 : 0</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End single plan -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End pricing table -->
+
+  <!-- Start subscribe -->
+  <section id="subscribe">
+    <div class="download-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-area wow fadeInUp">
+              <h2 class="title">About <span>Me</span></h2>
+            </div>
+          </div>
+          <!-- Start download app content -->
+          <div class="col-md-12">
+            <div class="subscribe-content wow fadeInLeft" style="position: relative ; top: 23px; left: 0px;" data-wow-duration="0.5s" data-wow-delay="1s">
+                <img src="assets/images/head.png">
+            </div>
+          <div class="col-md-12">
+            <div class="subscribe-content wow fadeInLeft" style="position: relative ; top: -103px; left: 370px;" data-wow-duration="1.5s" data-wow-delay="1s">
+              <table id="about_me_table">
+                <tr><td>姓名</td></tr>
+                <tr><td>學號</td></tr>
+                <tr><td>就讀於</td></tr>
+                </table>
+            </div>
+          <div class="col-md-12">
+            <div class="subscribe-content wow fadeInLeft" style="position: relative ; top: -208px; left: 555px; "data-wow-duration="2s" data-wow-delay="1s">
+              <table id="about_me_table">
+                <tr><td>王昇暉</td></tr>
+                <tr><td>1073302</td></tr>
+                <tr><td>元智大學</td></tr>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End download app -->
+
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="footer-text">
+            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>   
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- Off-canvas Menu -->   
+  <script src="assets/js/classie.js"></script>
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+  </body>
+</html>
