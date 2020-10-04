@@ -7,7 +7,8 @@
   時限內踩格子數量多的獲勝
 
 
-[遊玩連結請點我](https://axuy312.github.io/Web_1072_FinalProject/)
+# *▼點選圖片遊玩*
+[![image](https://github.com/axuy312/Web_1072_FinalProject/blob/main/Description/%E7%95%AB%E9%9D%A2.JPG)](https://axuy312.github.io/Web_1072_FinalProject/)
 
 	控制:
     P1移動:W、A、S、D
